@@ -1,14 +1,14 @@
 DEPRECATION WARNING
 ====================
-This repository is deprecated and in maintainence-only operation while we work on a replacement, please see `this announcement <https://discuss.openedx.org/t/deprecation-removal-ecommerce-service-depr-22/6839>`__ for more information.
+This repository is intended for 2U internal use, and is deprecated and in maintainence-only operation while we work on a replacement.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Although we have stopped integrating new contributions, we always appreciate security disclosures and patches sent to security@openedx.org
+Although we have stopped integrating new contributions, we always appreciate security disclosures and patches sent to security@edx.org
 
 edX Ecommerce Worker  |Build|_ |Codecov|_
 =========================================
-.. |Build| image:: https://github.com/openedx/ecommerce-worker/workflows/Python%20CI/badge.svg?branch=master
-.. _Build: https://github.com/openedx/ecommerce-worker/actions?query=workflow%3A%22Python+CI%22
+.. |Build| image:: https://github.com/edx/ecommerce-worker/workflows/Python%20CI/badge.svg?branch=master
+.. _Build: https://github.com/edx/ecommerce-worker/actions?query=workflow%3A%22Python+CI%22
 
 .. |Codecov| image:: http://codecov.io/github/edx/ecommerce-worker/coverage.svg?branch=master
 .. _Codecov: http://codecov.io/github/edx/ecommerce-worker?branch=master
@@ -24,7 +24,7 @@ Prerequisites
 Getting Started
 ---------------
 
-Most commands necessary to develop and run this app can be found in the included Makefile. These instructions assume a working integration between the `edX ecommerce service <https://github.com/openedx/ecommerce>`_ and the LMS, with asynchronous fulfillment configured on the ecommerce service.
+Most commands necessary to develop and run this app can be found in the included Makefile. These instructions assume a working integration between the `edX ecommerce service <https://github.com/edx/ecommerce>`_ and the LMS, with asynchronous fulfillment configured on the ecommerce service.
 
 To get started, create a new virtual environment and install the included requirements.
 
@@ -68,16 +68,14 @@ The code in this repository is licensed under the AGPL unless otherwise noted. P
 How To Contribute
 -----------------
 
-Notice: Internal 2U changes should be made against the ``2u/main`` branch.  Open source contributions should continue to be made against the ``master`` branch.
+Notice: Internal 2U changes should be made against the ``2u/main`` branch.
 
 Anyone merging to the ``2u/main`` branch of this repository is expected to `release and monitor their changes <https://2u-internal.atlassian.net/wiki/spaces/RS/pages/7963261/How+to+contribute+to+our+repositories>`__ (2U-private link); if you are not able to do this DO NOT MERGE, please coordinate with someone who can to ensure that the changes are released.
-
-Please also read `How To Contribute <https://github.com/openedx/.github/blob/master/CONTRIBUTING.md>`__. Even though it was written with ``edx-platform`` in mind, these guidelines should be followed for Open edX code in general.
 
 Reporting Security Issues
 -------------------------
 
-Please do not report security issues in public. Please email security@openedx.org.
+Please do not report security issues in public. Please email security@edx.org.
 
 Mailing List and IRC Channel
 ----------------------------
