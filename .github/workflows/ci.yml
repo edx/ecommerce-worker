@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-20.04]
+        os: [ubuntu-latest]
         python-version: [3.8]
         test-target: [test, quality]
 
@@ -30,7 +30,7 @@ jobs:
 
     - name: Build Docker
       run: |
-        docker-compose -f .github/docker-compose-ci.yml up -d
+        docker compose -f .github/docker-compose-ci.yml up -d
         docker exec ecomworker bash -c "sudo apt update -y; sudo apt install python3-dev -y;"
 
     - name: Run Tests
